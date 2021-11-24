@@ -1,0 +1,3 @@
+unique [] = []
+unique (x:y:xs) | [ c | c <- xs , c == x] == [] = unique  y:xs
+                | [ c | c <- xs , c == x] /= [] = unique  x:y:xs

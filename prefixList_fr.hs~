@@ -1,0 +1,3 @@
+prefixList_fr [] = []
+prefixList_fr xs = [(foldr (\x -> (\xs -> [x] ++ xs)) [] xs)] ++ (prefixList_fr (init xs))
+                                                                 

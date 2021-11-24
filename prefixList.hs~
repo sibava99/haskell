@@ -1,0 +1,2 @@
+prefixList [] = []
+prefixList xs = prefixList (init xs) ++ [xs] 
