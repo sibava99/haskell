@@ -1,0 +1,1 @@
+lete_fr t xs = foldr (\x -> (\xs -> (if x /= t then [x] ++ xs else xs ) )) [] xs 
